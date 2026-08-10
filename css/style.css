@@ -163,3 +163,7 @@ figcaption {
     height: auto;
   }
 }
+
+p {
+  text-indent: 2em;
+}
