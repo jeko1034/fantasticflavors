@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -69,6 +73,43 @@ main {
   flex: 1 0 auto; 
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.scroll-nav {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 0.9rem 1rem;
+  z-index: 20;
+  opacity: 1;
+}
+
+.scroll-nav h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.scroll-nav a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.2rem 0;
+}
+
+.scroll-nav a:hover,
+.scroll-nav a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.article-section {
+  scroll-margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 input[type="file"] {
@@ -174,5 +215,19 @@ figcaption {
     max-width: 98vw;
     width: 100%;
     height: auto;
+  }
+
+  .scroll-nav {
+    position: static;
+    transform: none;
+    opacity: 1;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .scroll-nav h3 {
+    width: 100%;
   }
 }
