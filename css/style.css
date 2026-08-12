@@ -49,12 +49,36 @@ table {
 /*************** Base Font ***************/
 html{
     font-family: "Inter", sans-serif;
-    background-color: blanchedalmond;
+}
+
+main{
+    width: 85%;
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+header{
+    width: 85%;
+    margin: auto auto 20px auto;
+    max-width: 400px;
 }
 
 h1{
     font-weight: 800;
     font-size: 2em;
+    margin-top: 20px;
+}
+
+header p{
+    font-weight: 600;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 nav{
@@ -86,18 +110,19 @@ nav{
 }
 
 #bars{
-    position: relative;
+    position: absolute;
+    right: 20px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     align-items:end;
-    top: 22%;
     z-index: 2;
     margin: auto;
 }
 
 #Menu{
     display: none;
-    position: absolute;
+    /* position: absolute; */
     height: 100vh;
     width: 100vw;
     left: 0;
@@ -122,4 +147,30 @@ nav{
     color: black;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+main p{
+    text-indent: 1em;
+    font-size: 1em;
+    margin:  20px;
+}
+
+h3{
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+footer p{
+    color: white;
 }
