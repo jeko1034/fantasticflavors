@@ -174,3 +174,98 @@ footer{
 footer p{
     color: white;
 }
+
+/*************** Small Screen ***************/
+@media screen and (min-width: 750px) {
+
+    #bars{
+        display: none;
+    }
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1.75fr;
+        grid-template-rows: 1fr 0.5fr;
+        width: 80%;
+        max-width: 940px;
+        margin-bottom: 0;
+    }
+
+    #Menu{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #Menu li{
+        margin: 0;
+    }
+
+    #Menu>li:first-child{
+        margin: 0;
+    }
+
+    #Menu li a{
+        font-size: 1em;
+        font-weight: 600;
+        
+    }
+
+    h1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    p{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    main{
+        width: 80%;
+        max-width: 940px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/*************** Large Screens ***************/
+@media screen and (min-width: 966px) {
+    header{
+        margin: 10px auto 50px auto;
+    }
+
+    h2{
+        margin-top: 50px;
+        font-size: 1.75em;
+    }
+
+    #Menu li a{
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    main p{
+        text-indent: 2em;
+        font-size: 1.2em;
+        margin: 40px 70px;
+    }
+
+    main p:last-child{
+        margin-bottom: 70px;
+    }
+}
