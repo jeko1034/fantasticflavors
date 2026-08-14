@@ -70,6 +70,11 @@ h1{
     margin-top: 20px;
 }
 
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
 header p{
     font-weight: 600;
 }
@@ -175,6 +180,26 @@ footer p{
     color: white;
 }
 
+.scroll-nav{
+    position: fixed;
+    background-color: aqua;
+    float: left;
+    padding: 10px;
+    border-top: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+    width: 50%;
+    max-width: 300px;
+}
+
+.scroll-nav a{
+    text-decoration: none;
+}
+
+.scroll-nav h4{
+    color: black;
+}
+
 /*************** Small Screen ***************/
 @media screen and (min-width: 750px) {
 
@@ -235,6 +260,10 @@ footer p{
     }
 
     footer{
+        position:relative;
+    }
+
+    #short-footer{
         position: absolute;
         bottom: 0;
     }
